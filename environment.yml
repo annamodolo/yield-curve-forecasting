@@ -1,0 +1,12 @@
+name: yield-curve-forecasting
+channels:
+  - conda-forge
+dependencies:
+  - python=3.10
+  - numpy
+  - pandas
+  - matplotlib
+  - scikit-learn
+  - pip
+  - pip:
+      - xgboost
