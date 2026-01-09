@@ -176,6 +176,12 @@ regimes. By combining numerical metrics with graphical analysis, the evaluation 
 provides a more comprehensive understanding of the strengths and limitations of each forecasting
 approach.
 
+To complement these metrics, I have also assesed the forecast accuracy using the Diebold-Mariano test,
+which provides a statistical comparison between each model.
+In particular, the test is used to evaluate whether differences in squared forecast errors between
+each machine learning model and the naive basline are statistically significant.
+This allows for a better assessment of whether observed improvements in predicting performance are meaningful. 
+
 \section{Codebase and Reproducibility}
 All experiments were implemented in pyhton using standard scientific libraries (NumPy, pandas, scikitlearn, XGBoost, matplotlib).
 The code is organized in a modular structure and can be executed by running the main script, which reproduces all figures and evaluation results.
