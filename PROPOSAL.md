@@ -8,8 +8,8 @@ Problem statement or Motivation
 In fixed-income market, the yield curve, that shows the relationship between bond yields and
 maturities, reflects investors expectations for growth, inflation, and monetary policy. It is important
 to forecast its movements in order to value default free bonds and manage interest rate risk.
-This project aims to predict future movements of the risk free yield curve using Random Forest,
-XGBoost, and LSTM neural networks, comparing their forecasting performance to indetify which
+This project aims to predict future movements of the risk free yield curve using Random Forest and
+XGBoost, comparing their forecasting performance to indetify which
 technique best models yield changes across different maturities and market conditions.
 Planned approach and technologies
 
@@ -23,7 +23,7 @@ The project will be implemented in Python and I will be using:
 
 The main steps are going to be:
 1. Data collection and preprocessing: download zero-coupon yield curve data and €STR short rate
-data from the ECB Statistical Data Warehouse (2010-present) and clean. Use monthly data as
+data from the ECB Statistical Data Warehouse (2004-present) and clean. Use monthly data as
 this frequency provides a smoother and more stable representation of interest rate dynamics.
 Then interpolate missing maturities and create features such as yield-curve slopes, curvatures
 and principal components (PCA).
@@ -36,7 +36,7 @@ such as RMSE, MAE, and R^2. Also apply Diebold-Mariano tests to check wheter dif
 in forecast errors are statistically significant. To properly evaluate forecast accuracy, I will
 include a simple baseline benchmark: a naïve “last observation carried forward” predictor (i.e.,
 assuming next month’s yield equals the current month’s yield). All machine-learning models
-(Random Forest, XGBoost, LSTM) will be compared against this baseline using the same
+(Random Forest, XGBoost) will be compared against this baseline using the same
 rolling-window forecast framework.
 
 4. Visualization: Plot predicted vs actual yield curves, error heatmaps, and feature-importance
@@ -57,7 +57,7 @@ ensure fairness.
 Success criteria
 The project will be successful if:
 • Real ECB yield curve data are cleaned and structured for machine learning use.
-• Random Forest, XGBoost and LSTM models are trained and evaluated on multiple maturities.
+• Random Forest and XGBoost models are trained and evaluated on multiple maturities.
 • Machine-learning models significantly outperform the naïve benchmark according to RMSE,
 MAE, and Diebold–Mariano tests.
 • Visualizations effectively demonstrate model accuracy and limitations.
