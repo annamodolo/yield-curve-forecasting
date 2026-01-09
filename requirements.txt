@@ -1,0 +1,9 @@
+numpy
+pandas
+matplotlib
+seaborn
+scikit-learn
+xgboost
+tensorflow==2.12
+statsmodels
+pytest
